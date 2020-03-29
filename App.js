@@ -18,7 +18,17 @@ export default function App() {
   const [contatos, setContatos] = useState ([]);
 
 
- 
+  const adicionarContato = () => {
+    console.log("Contato-Nome: " + nome);
+    console.log("Contato-Telefone: " + telefone);
+    setContatos (contatos => {
+      console.log (contatos);
+     
+      
+    });
+    
+    //console.log (lembrete);
+  }
 
   return (
     <View style={styles.container}>
