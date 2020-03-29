@@ -17,13 +17,21 @@ export default function App() {
 
   const [contatos, setContatos] = useState ([]);
 
+  const [contadorContatos, setContadorContatos] = useState(10);
 
   const adicionarContato = () => {
     console.log("Contato-Nome: " + nome);
     console.log("Contato-Telefone: " + telefone);
     setContatos (contatos => {
       console.log (contatos);
-     
+      setContadorContatos(contadorContatos + 2);
+      return [
+        {
+          key: contadorContatos.toString(),
+          value: {nome: nome, telefone: telefone}
+        }, 
+        ...contatos
+      ];
       
     });
     
