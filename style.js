@@ -5,9 +5,9 @@ export default StyleSheet.create({
     flex: 1,
         paddingHorizontal: 24,
         marginTop: 40,
-        backgroundColor: "#800080",
+        backgroundColor: "rgb(255, 68, 68)",
   },
-  lembreteView : {
+  contatoView : {
     padding: 24,
     borderRadius: 8,
     backgroundColor: '#FFF',
@@ -17,7 +17,7 @@ export default StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  lembreteTextInput: {
+  contatoTextInput: {
     width: '80%',
     height: 55,
     backgroundColor: '#FFF',
@@ -53,7 +53,7 @@ export default StyleSheet.create({
     padding: 10,
     paddingLeft: 20,
     paddingRight: 20,
-    backgroundColor: "#800080",
+    backgroundColor: "rgb(255, 68, 68)",
     alignItems: 'center'
   },
   detailsButtonText: {
