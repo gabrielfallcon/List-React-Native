@@ -1,13 +1,13 @@
 import {StyleSheet} from 'react-native';
-import Cores from './colors/';
-import Medidas from './boxModel'
+import Cores from './colors/colors';
+import Medidas from './measures/measures';
 
 export default StyleSheet.create({
   container : {
     flex: 1,
-    paddingHorizontal: Medidas.containerPaddingH,
-    marginTop: Medidas.containerMarginT,
-    backgroundColor: Cores.accent,
+        paddingHorizontal: Medidas.containerPaddingH,
+        marginTop: Medidas.containerMarginT,
+        backgroundColor: Cores.accent,
   },
   contatoView : {
     padding: Medidas.cardPadding,
@@ -15,7 +15,6 @@ export default StyleSheet.create({
     backgroundColor: Cores.primary,
     marginVertical: Medidas.cardMargin,
     flexDirection: "column",
-    alignItems: "center",
     justifyContent: "center",
   },
   contatoTextInput: {
@@ -26,34 +25,28 @@ export default StyleSheet.create({
     borderWidth: Medidas.inputBorderWidth,
     borderRadius: Medidas.inputBorderRadius,
     color: Cores.border,
+    //borderBottomColor: 'black',
+    //borderBottomWidth: 1,
     marginBottom: Medidas.inputMargin,
     padding: Medidas.inputPadding,
 
   },
   itemNaLista: {
-    padding: Medidas.cardPadding,
     marginBottom: Medidas.cardMargin,
+    alignItems: 'baseline',
     borderRadius: Medidas.cardBorderRadius,
     backgroundColor: Cores.primary,
-    shadowColor: Cores.shadow,
-    shadowOffset: {
-      width: Medidas.cardShadowWidth,
-      height: Medidas.cardShadowHeight
-    },
-    shadowRadius: Medidas.cardShadowRadius,
-    shadowOpacity: Medidas.cardShadowOpacity,
-    elevation: Medidas.cardElevation,
   },
   listaTitle: {
-    fontSize: Medidas.fontText,
-    color: Cores.textPrimary,
-    fontWeight: 'bold',
+      fontSize: Medidas.fontText,
+      color: Cores.textPrimary,
+      fontWeight: 'bold',
   },
 
   listaPhone: {
-    marginTop: Medidas.cardTextMargin,
-    fontSize: Medidas.fontText,
-    color: Cores.textSecondary,
+      marginTop: Medidas.cardTextMargin,
+      fontSize: Medidas.fontText,
+      color: Cores.textSecondary,
   },
   datailsButton: {
     borderRadius: Medidas.buttonBorderRadius,
@@ -69,13 +62,12 @@ export default StyleSheet.create({
     fontSize: Medidas.fontButton,
   },
   welcome: {
-    marginTop: Medidas.titleMarginT,
+    justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 100,
+    marginTop: Medidas.titleMarginT,
   },
   welcomeTitle: {
     fontSize: Medidas.fontTitle,
-    fontSize: 34,
     textAlign: 'center',
     fontWeight: 'bold',
     color: Cores.primary,
